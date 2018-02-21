@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="utf-8">
   <title>Настроение</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
   <script id="quotes_json" type="application/json">
-    [
-      {
+    [{
         "phrase": "Кукурузные хлопья - теперь без асбеста!",
         "signature": "©Неизвестный маркетолог"
       },
@@ -19,7 +21,55 @@
       }
     ]
   </script>
+  <style type="text/css">
+    html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cuprum', sans-serif;
+    }
+
+    .block_of_quote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    ol {
+      padding: 0;
+    }
+
+    li {
+      width: 700px;
+      height: 400px;
+      padding: 50px;
+      background-color: #efcec5;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .button {
+      width: 300px;
+      height: 70px;
+      border: 2px solid black;
+      color: black;
+      font-size: 2rem;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="block_of_quote">
+    <ol id="quote_block">
+    </ol>
+    <button class="button" onclick="button_click()">→</button>
+  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>

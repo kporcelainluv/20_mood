@@ -1,6 +1,6 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+This code is supposed to extract one joke from a list and output it on the page. If you press the button, the page updates and new joke is shown.
 
 # Project Goals
 
