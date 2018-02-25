@@ -1,0 +1,33 @@
+    html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cuprum', sans-serif;
+    }
+
+    #block_of_quote {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      font-size: 2rem;
+    }
+
+    #quote {
+      width: 700px;
+      height: 400px;
+      padding: 50px;
+      background-color: #efcec5;
+      display: flex;
+      align-items: center;
+    }
+
+    .button {
+      width: 300px;
+      height: 70px;
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+      font-size: 2rem;
+    }

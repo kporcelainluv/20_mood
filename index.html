@@ -5,69 +5,13 @@
   <meta charset="utf-8">
   <title>Настроение</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
-  <script id="quotes_json" type="application/json">
-    [{
-        "phrase": "Кукурузные хлопья - теперь без асбеста!",
-        "signature": "©Неизвестный маркетолог"
-      },
-      {
-        "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
-      },
-      {
-        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
-      },
-      {
-        "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
-      }
-    ]
-  </script>
-  <style type="text/css">
-    html {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Cuprum', sans-serif;
-    }
-
-    .block_of_quote {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    ol {
-      padding: 0;
-    }
-
-    li {
-      width: 700px;
-      height: 400px;
-      padding: 50px;
-      background-color: #efcec5;
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    .button {
-      width: 300px;
-      height: 70px;
-      border: 2px solid black;
-      color: black;
-      font-size: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="block_of_quote">
-    <ol id="quote_block">
-    </ol>
-    <button class="button" onclick="button_click()">→</button>
+  <div id="block_of_quote">
+    <div id="quote"></div>
+    <button class="button">→</button>
   </div>
   <script src="./script.js"></script>
 </body>
